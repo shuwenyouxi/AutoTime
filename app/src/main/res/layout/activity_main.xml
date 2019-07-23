@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+    <androidx.constraintlayout.helper.widget.Flow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:constraint_referenced_ids="tv_device,tv_device_time,tv_server,tv_server_time,btn_print"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/tv_device"
+            android:layout_width="match_parent"
+            android:text="Current device time:"
+            tools:ignore="MissingConstraints"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_device_time"
+            android:layout_width="match_parent"
+            android:padding="5dp"
+            tools:ignore="MissingConstraints"
+            android:textSize="15dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+    <TextView
+            android:id="@+id/tv_server"
+            android:layout_width="match_parent"
+            android:text="Current server time:"
+            tools:ignore="MissingConstraints"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+    <TextView
+            android:id="@+id/tv_server_time"
+            android:layout_width="match_parent"
+            tools:ignore="MissingConstraints"
+            android:textSize="15dp"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_print"
+            android:layout_width="wrap_content"
+            tools:ignore="MissingConstraints"
+            android:text="print time"
+            android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
